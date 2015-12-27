@@ -1,0 +1,25 @@
+.TH .rem.sh 1 "3 December 2015" "version 1.0"
+.SH NAME
+rem.sh - Replaces native rm command
+.\"
+.SH SYNOPSIS
+.B rm
+[-l] [-d] [-s] 
+.I filename
+.\"
+.SH DESCRIPTION
+.B rem
+is a script to replace the native rm command.  When properly installed it will be ran
+when rm is invoked.  To access the native rm command use \\rm.
+This command will move the files to a hidden .trash folder in the user's home directory.
+.\"
+.SH OPTIONS
+.TP
+.B -l, --list
+lists all files currently in the trash
+.TP
+.B -d, --delete
+destroys the trash and all files in it
+.TP
+.B -s, --shred
+destroys the trash and makes all files non-retrieveable to recovery software
