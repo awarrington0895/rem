@@ -7,8 +7,7 @@ Modified: 2015-12-03 13:43:02
 Filename: .rem.sh
 '
 
-# The purpose of this script is for my own safety
-# It replaces the natural rm function and instead of permanently deleting
+# This script replaces the natural rm function and instead of permanently deleting
 # files, it will send them to a trash folder
 
 
@@ -16,7 +15,7 @@ Filename: .rem.sh
 
 if [ $# == 0 ] 
 then
-    echo "Usage: rm -l | -d | {filename}*"
+    echo "Usage: rm -l | -d | -s | {filename}*"
     exit 0;
 fi
 

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# This script wll install the rem.sh script so that it can be called with rm
+
+dir=`pwd`
+
+echo "alias rm='$dir/rem.sh'" >> $HOME/.bashrc
