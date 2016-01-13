@@ -5,3 +5,4 @@
 dir=`pwd`
 
 echo "alias rm='$dir/rem.sh'" >> $HOME/.bashrc
+
